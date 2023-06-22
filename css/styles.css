@@ -1,25 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,800&display=swap");
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  justify-content: center;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section.sign-up-form {
+  width: 1327px;
+  background-color: #f8f9fa;
+}
+
+section div.bg-img {
+  width: 495px;
+  height: 100vh;
+  background-image: url(../images/jason-ryan-RCLtBDW0izo-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+section div.bg-img:first-child {
+  bottom: 0%;
+  color: #000000;
+  font-size: 0.75rem;
+  padding-bottom: 0.75rem;
+}
