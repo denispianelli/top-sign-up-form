@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,800&display=swap');
 
 html {
   box-sizing: border-box;
@@ -49,19 +49,41 @@ section.sign-up-form {
   background-color: #f8f9fa;
 }
 
-section div.bg-img {
+div.bg-img {
   width: 495px;
   height: 100vh;
   background-image: url(../images/jason-ryan-RCLtBDW0izo-unsplash.jpg);
   background-size: cover;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-section div.bg-img:first-child {
-  bottom: 0%;
-  color: #000000;
+div.bg-img-logo,
+div.bg-img-credit {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  color: #ffffff;
+}
+
+div.bg-img-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    margin-bottom: 560px;
+    font-family: 'Poiret One', cursive;
+}
+
+div.bg-img-logo img {
+    height: 80%;
+}
+
+div.bg-img-credit {
   font-size: 0.75rem;
-  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 4px;
 }
