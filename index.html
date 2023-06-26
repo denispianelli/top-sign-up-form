@@ -9,9 +9,85 @@
   <body>
     <section class="sign-up-form">
       <div class="bg-img">
-        <div class="bg-img-logo"><img src="./images/odin-lined.png" alt="">odin</div>
-        <div class="bg-img-credit">Photo by <a href="https://unsplash.com/fr/@jasonryanstudio">Jason Ryan</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        <div class="bg-img-logo">
+          <img src="./images/odin-lined.png" alt="" />odin
+        </div>
+        <div class="bg-img-credit">
+          Photo by
+          <a href="https://unsplash.com/fr/@justatony">Tony Litvyak</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </div>
       </div>
+      <div class="sign-up-form-container">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />
+          Sign up <em>now</em> to get started.
+        </p>
+        <br />
+        <p>You <em>know</em> you want to.</p>
+        <form action="" method="">
+          <fieldset>
+            <legend>Let's do this!</legend>
+
+            <div class="input-container">
+              <label for="first_name">first name</label>
+              <input type="text" id="first_name" name="first_name" />
+            </div>
+
+            <div class="input-container">
+              <label for="last_name">last name</label>
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+
+            <div class="input-container">
+              <span class="required"></span>
+              <label for="email"><span>email</span></label>
+              <input type="text" id="email" name="email" />
+              <span class="error"></span>
+            </div>
+
+            <div class="input-container">
+              <label for="phone_number">phone number</label>
+              <input
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="input-container">
+              <span class="required"></span>
+              <label for="user_password">password</label>
+              <input type="password" id="user_password" name="user_password" />
+              <span class="error"></span>
+            </div>
+
+            <div class="input-container">
+              <span class="required"></span>
+              <label for="user_confirm_password">confirm password</label>
+              <input
+                type="password"
+                id="user_confirm_password"
+                name="user_confirm_password"
+              />
+              <span class="error"></span>
+            </div>
+          </fieldset>
+
+          <div class="form-submit-btn">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+        <div><p>Already have an account? <a href="">Log in</a></p></div>
+      </div>
+
     </section>
+    <script src="./js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a00cd35004.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
