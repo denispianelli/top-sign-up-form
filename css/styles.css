@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100;1,400;1,600;1,800&display=swap");
 
 html {
   box-sizing: border-box;
@@ -25,9 +25,10 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+}
+
+body {
   background-color: rgb(16, 16, 16);
-  display: flex;
-  justify-content: center;
 }
 
 ol,
@@ -44,46 +45,154 @@ img {
   height: auto;
 }
 
-section.sign-up-form {
-  width: 1327px;
+.sign-up-form {
+  width: 100vw;
+
+  display: flex;
   background-color: #f8f9fa;
 }
 
-div.bg-img {
-  width: 495px;
+.bg-img {
+  width: 80rem;
   height: 100vh;
-  background-image: url(../images/jason-ryan-RCLtBDW0izo-unsplash.jpg);
+  background-image: url(../images/tony-litvyak-r4B5Y8g2R0s-unsplash.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-div.bg-img-logo,
-div.bg-img-credit {
+.bg-img-logo,
+.bg-img-credit {
   text-align: center;
   width: 100%;
-  background-color: rgba(51, 51, 51, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
 }
 
-div.bg-img-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    text-transform: uppercase;
-    font-size: 4.5rem;
-    margin-bottom: 560px;
-    font-family: 'Poiret One', cursive;
+.bg-img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  margin-bottom: 560px;
+  font-family: "Poiret One", cursive;
 }
 
-div.bg-img-logo img {
-    height: 80%;
+.bg-img-logo img {
+  height: 80%;
 }
 
-div.bg-img-credit {
+.bg-img-credit {
   font-size: 0.75rem;
   margin-bottom: 0.75rem;
   padding: 4px;
+}
+
+.sign-up-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-up-form p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0 200px 0 40px;
+}
+
+fieldset {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  padding: 10px 0px 30px 0;
+  column-gap: 5rem;
+  row-gap: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 14px 15px -19px rgba(0, 0, 0, 0.75);
+  margin-top: 60px;
+  padding: 50px 150px 50px 40px;
+}
+
+legend {
+  position: absolute;
+  top: 10px;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: 1px solid blue;
+}
+
+input.invalid {
+  border: 1px solid rgb(195, 3, 3);
+}
+
+.error {
+  color: rgb(195, 3, 3);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.required {
+    position: relative;
+}
+
+.required::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "required";
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    top: 0px;
+    right: -10px;
+}
+
+button {
+  background-color: rgb(33, 94, 38);
+  color: rgb(255, 255, 255);
+  margin: 20px 40px;
+  padding: 10px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.sign-up-form p:last-child {
+    font-size: 0.9rem;
+}
+
+.sign-up-form-container p a {
+    color: rgb(33, 94, 38);
+    text-decoration: none;
+    outline: none;
 }
