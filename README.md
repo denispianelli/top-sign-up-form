@@ -4,7 +4,7 @@ This project is a sign-up form developed as part of The Odin Project curriculum.
 
 ## Live Demo
 
-A live demo of the project can be accessed [here](https://denispianelli.github.io/sign-up-form/).
+A live demo of the project can be accessed [here](https://denispianelli.github.io/top-sign-up-form/).
 
 ## Features
 
